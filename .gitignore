@@ -1,0 +1,17 @@
+.idea/
+*.iml
+terraform.tfstate
+terraform.tfstate.backup
+.terraform/
+terraform.tfvars
+.tmp
+bin
+bin2
+gitops
+module
+tmp
+.kubeconfig
+.namespace
+.terraform.lock.hcl
+git_repo
+git_token
