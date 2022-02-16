@@ -28,9 +28,9 @@ locals {
       }
       extendedDeploymentConfiguration = {
         airgapInstall = false
-        backupStorageClass = var.storage_class
+        backupStorageClass = ""
         backupStorageSize = ""
-        imagePullPolicy = "IfNotPresent"
+        imagePullPolicy = "Always"
         repository = "cp.icr.io/cp/cp4s"
         repositoryType = "entitled"
         roksAuthentication = var.roks_auth

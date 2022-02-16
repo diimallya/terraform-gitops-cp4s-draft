@@ -15,3 +15,4 @@ tmp
 .terraform.lock.hcl
 git_repo
 git_token
+.github
