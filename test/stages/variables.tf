@@ -96,5 +96,5 @@ variable cp4s_roks_auth {
 variable "cp4s_admin_user" {
   type = string
   description = "The admin user to be specified while creating cp4s-threat-managment-instance"
-  
+  default = ""
 }

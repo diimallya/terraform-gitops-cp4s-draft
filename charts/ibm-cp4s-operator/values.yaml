@@ -5,3 +5,5 @@ global: {}
 cp4s:
   cp4s_namespace: cp4s
   cp4s_platform_channel: v1.9
+  catalogsource: ibm-operator-catalog
+  catalogsource_namespace: openshift-marketplace

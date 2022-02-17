@@ -90,7 +90,6 @@ variable "storage_class" {
   type = string
   description = "Block storage class name"
   default = ""
-  
 }
 
 variable roks_auth {
@@ -107,5 +106,17 @@ variable "entitlement_key" {
 variable "admin_user" {
   type = string
   description = "admin user to be specified while creating cp4s-threat-management-instance"
-  default = "admin"
+  default = ""
+}
+
+variable "catalog" {
+  type        = string
+  description = "The catalog source that should be used to deploy the operator"
+  default     = "ibm-operator-catalog"
+}
+
+variable "catalog_namespace" {
+  type        = string
+  description = "The namespace where the catalog has been deployed"
+  default     = "openshift-marketplace"
 }

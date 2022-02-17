@@ -12,6 +12,8 @@ locals {
     cp4s = {
       cps_namespace        = var.namespace
       cps_platform_channel = var.channel
+      catalogsource = var.catalog
+      catalogsource_namespace = var.catalog_namespace
     }
   }
   instance_values_content = {

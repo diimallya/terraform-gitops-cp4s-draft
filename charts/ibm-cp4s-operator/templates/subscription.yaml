@@ -7,5 +7,5 @@ spec:
      channel: {{ .Values.cp4s.cp4s_platform_channel }}
      installPlanApproval: Automatic
      name: ibm-cp-security-operator
-     source: ibm-operator-catalog
-     sourceNamespace: openshift-marketplace
+     source: {{ .Values.cp4s.catalogsource }}
+     sourceNamespace: {{ .Values.cp4s.catalogsource_namespace }}
