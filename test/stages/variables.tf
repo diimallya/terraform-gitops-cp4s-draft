@@ -29,10 +29,10 @@ variable "cluster_name" {
   default     = ""
 }
 
-# variable "cluster_type" {
-#   type        = string
-#   description = "The type of cluster that should be created (openshift or kubernetes)"
-# }
+variable "cluster_type" {
+  type        = string
+  description = "The type of cluster that should be created (openshift or kubernetes)"
+}
 
 variable "cluster_exists" {
   type        = string
@@ -74,27 +74,4 @@ variable "kubeseal_namespace" {
 }
 
 variable "cp_entitlement_key" {
-}
-
-variable "cp4s_channel" {
-  default = "v1.9"
-}
-
-variable "cp4s_storage_class" {
-  type = string
-  description = "Block storage class name"
-  default = ""
-  
-}
-
-variable cp4s_roks_auth {
-  type = string
-  description = "Whether ROKS authentication need to be enabled"
-  default = "false"
-}
-
-variable "cp4s_admin_user" {
-  type = string
-  description = "The admin user to be specified while creating cp4s-threat-managment-instance"
-  default = ""
 }

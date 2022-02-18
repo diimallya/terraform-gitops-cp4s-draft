@@ -88,7 +88,7 @@ variable "channel" {
 
 variable "storage_class" {
   type = string
-  description = "Block storage class name"
+  description = "Storage class name for block storage"
   default = ""
 }
 
@@ -105,7 +105,7 @@ variable "entitlement_key" {
 
 variable "admin_user" {
   type = string
-  description = "admin user to be specified while creating cp4s-threat-management-instance"
+  description = "admin user email-id to be specified while creating cp4s-threat-management-instance"
   default = ""
 }
 
