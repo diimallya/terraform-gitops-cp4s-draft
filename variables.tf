@@ -105,8 +105,8 @@ variable "entitlement_key" {
 
 variable "admin_user" {
   type = string
-  description = "admin user email-id to be specified while creating cp4s-threat-management-instance"
-  default = ""
+  description = "Short name or email-id of the user to be given administrator privileges in the default account. Mandatory value while creating cp4s-threat-management-instance"
+  default = "admin"
 }
 
 variable "catalog" {
