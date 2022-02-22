@@ -16,3 +16,5 @@ tmp
 git_repo
 git_token
 .github
+test/stages/gitops-output.json
+.DS_Store
