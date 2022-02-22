@@ -66,6 +66,7 @@ variable "git_credentials" {
 variable "namespace" {
   type        = string
   description = "The namespace where the application should be deployed"
+  default = "cp4s"
 }
 
 variable "kubeseal_cert" {
@@ -92,7 +93,7 @@ variable "storage_class" {
   default = ""
 }
 
-variable roks_auth {
+variable "roks_auth" {
   type = string
   description = "Whether ROKS authentication need to be enabled"
   default = "false"
