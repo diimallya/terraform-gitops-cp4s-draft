@@ -15,7 +15,7 @@ find . -name "*"
 
 ## **** Operator
 
-NAMESPACE="cp4s"
+NAMESPACE=$(cat .namespace)
 BRANCH="main"
 SERVER_NAME="default"
 TYPE="operators"

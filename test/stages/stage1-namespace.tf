@@ -8,6 +8,6 @@ module "gitops_namespace" {
 
 resource null_resource write_namespace {
   provisioner "local-exec" {
-    command = "echo '${module.gitops_namespace.name}' > .namespace"
+    command = "echo -n '${module.gitops_namespace.name}' > .namespace"
   }
 }
