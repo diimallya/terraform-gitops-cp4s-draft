@@ -135,7 +135,7 @@ resource null_resource setup_instance_gitops {
     yaml_dir = local.instance_yaml_dir
     server_name = var.server_name
     layer = local.layer
-    type = local.type
+    type = "instances"
     git_credentials = yamlencode(var.git_credentials)
     gitops_config   = yamlencode(var.gitops_config)
   }
