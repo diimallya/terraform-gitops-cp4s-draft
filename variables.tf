@@ -88,7 +88,7 @@ variable "channel" {
 
 variable "storage_class" {
   type = string
-  description = "Storage class name for block storage"
+  description = "Storage class name for block storage, if left blank default storage class will be taken."
   default = ""
 }
 
