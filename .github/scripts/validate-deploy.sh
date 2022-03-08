@@ -86,7 +86,7 @@ kubectl get csv -n "${NAMESPACE}" -l operators.coreos.com/${CSV}.${NAMESPACE}=""
 
 ## ***** Instance
 
-NAMESPACE="cp4s"
+NAMESPACE=$(cat .namespace)
 BRANCH="main"
 SERVER_NAME="default"
 TYPE="instances"
