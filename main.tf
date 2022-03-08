@@ -26,7 +26,7 @@ locals {
       basicDeploymentConfiguration = {
         adminUser = var.admin_user
         domain = ""
-        storageClass = var.storage_class
+        storageClass = var.storageclass
       }
       extendedDeploymentConfiguration = {
         airgapInstall = false
