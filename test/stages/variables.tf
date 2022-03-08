@@ -76,7 +76,3 @@ variable "kubeseal_namespace" {
 
 variable "cp_entitlement_key" {
 }
-
-variable "cp4s_admin_user" {
-  default = "admin"
-}
